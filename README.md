@@ -17,10 +17,6 @@ We conduct full experiments on STMVGAE on five real datasets and compared it wit
 * consensus_clustering: Consensus clustering to integrate diverse results.
 * SVGs: Spatially variant gene (SVGs) identification.
 
-## Getting started
-We provide slices of the DLPFC dataset. We have encapsulated the STMVGAE training process into the run.ipynb file. You only need to enter the correct file path to run it.
-If you need programs to run other downstream tasks, please contact us via email: 83024551@qq.com.
-
 ## System environment
 scanpy == 1.9.2   
 scipy == 1.10.1   
@@ -36,5 +32,7 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 -  Stereo-seq mouse olfactory bulb dataset: https://github.com/JinmiaoChenLab/SEDR_analyses;
 -  The ISH images of the adult human brain in gene denosing task are available at the Allen Human Brain Atlas: \url{https://human.brain-map.org/}.
 
-## Running Experiments
+## Getting started
+We provide slices of the DLPFC dataset. We have encapsulated the STMVGAE training process into the run.ipynb file. You only need to enter the correct file path to run it.
+If you need programs to run other downstream tasks, please contact us via email: 83024551@qq.com.
 - See `run.ipynb`

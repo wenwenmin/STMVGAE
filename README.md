@@ -1,4 +1,4 @@
-# STMVGAE:Deep Clustering Representation for Spatially Resolved Transcriptomics Data via Multi-view Variational Graph Auto-Encoders with Consensus Clustering
+## STMVGAE: Deep Clustering Representation for Spatially Resolved Transcriptomics Data via Multi-view Variational Graph Auto-Encoders with Consensus Clustering
 ![image](https://github.com/JinyunNiu/STMVGAE/blob/main/STMVGAE_Overview.jpg)
 
 ## Overview

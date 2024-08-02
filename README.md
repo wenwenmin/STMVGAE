@@ -30,7 +30,7 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 -  10x Visium Human breast cancer: ductal carcinoma in situ dataset: https://www.10xgenomics.com/datasets/human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0; https://www.10xgenomics.com/datasets/human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0; 
 -  sptial-research melanoma cancer dataset: https://github.com/1alnoman/ScribbleDom;
 -  Stereo-seq mouse olfactory bulb dataset: https://github.com/JinmiaoChenLab/SEDR_analyses;
--  The ISH images of the adult human brain in gene denosing task are available at the Allen Human Brain Atlas: \url{https://human.brain-map.org/}.
+-  The ISH images of the adult human brain in gene denosing task are available at the Allen Human Brain Atlas: https://human.brain-map.org/.
 
 ## Getting started
 We provide slices of the DLPFC dataset. We have encapsulated the STMVGAE training process into the run.ipynb file. You only need to enter the correct file path to run it.

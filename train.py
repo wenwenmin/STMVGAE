@@ -13,9 +13,7 @@ from utils import *
 from adj import graph
 from dataset import *
 from his_feat import *
-from augment import augment_adata,augment_adata_
-
-
+from augment import augment_adata
 
 class train_model():
     def __init__(self,

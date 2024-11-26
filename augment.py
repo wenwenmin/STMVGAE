@@ -97,54 +97,6 @@ def augment_adata(
 				adjacent_weight = adjacent_weight)
 	return adata
 
-def augment_adata_(adata,
-				   activate='Relu',
-				   min_cells = 50,
-	               min_counts = None,
-				   weight = 0.1,
-				   ):
-	print('Augment adata is processing')
-	data = adata.obsm['image_feat'].astype(np.float64)
-	data = torch.FloatTensor(data)
-	conv1 = torch.nn.Linear(data.shape[1], 3000)
-	data1 = conv1(data)
-	data2 = torch.nn.BatchNorm1d(data1.shape[1])(data1)
-	if activate == 'Sigmoid': #softmax后基本都是0,1，密度比softmax大
-		sigmoid = torch.nn.Sigmoid()
-		data3 = sigmoid(data2)
-		data3 = data3.detach().numpy()
-	if activate == 'Softmax': #softmax后基本都是0,1，且0很多
-		softmax = torch.nn.Softmax()
-		data3 = softmax(data2)
-		data3 = data3.detach().numpy()
-	if activate == 'Relu':
-		relu = torch.nn.ReLU()
-		data3 = relu(data2)
-		data3 = data3.detach().numpy()
-	if activate == 'Relu6':
-		relu6 = torch.nn.ReLU6()
-		data3 = relu6(data2)
-		data3 = data3.detach().numpy()
-	data4 = np.around(weight * data3)
-
-	sc.pp.calculate_qc_metrics(adata, inplace=True)  # qc质量测试
-	sc.pp.filter_genes(adata, min_cells=min_cells)  # 基因数量筛选
-	if min_counts is not None:
-		sc.pp.filter_cells(adata, min_counts=min_counts)
-	print("After filtering: ", adata.shape)  # 输出filtering后基因的shape
-	sc.pp.highly_variable_genes(adata, flavor="seurat_v3", n_top_genes=3000)  # 筛选高表达基因3000
-	adata = adata[:, adata.var['highly_variable']]
-
-	augument_data = adata.X.toarray() + data4
-	adata.obsm['augument_data'] = augument_data
-
-	adata.X = adata.obsm["augument_data"].astype(np.float64)
-	sc.pp.normalize_total(adata)
-	sc.pp.log1p(adata)
-	print('Augment adata is ending')
-
-	return adata
-
 
 
 

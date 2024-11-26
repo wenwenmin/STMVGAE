@@ -10,12 +10,6 @@ from torch_geometric.nn import Sequential, BatchNorm, InstanceNorm, GCNConv, GAT
 from typing import Callable, Iterable, Union, Tuple, Optional
 import logging
 
-#GNN_list = [
-# (GCNConv(conv_hidden[0], conv_hidden[1], cached=True,)
-# (GATConv)
-# ]
-
-#DeepST类似
 class VGAE(nn.Module):
     def __init__(self,
                  input_dim,  # 输入维度
@@ -82,7 +76,6 @@ class VGAE(nn.Module):
 
         self.cluster_layer = Parameter(torch.Tensor(self.dec_cluster_n, self.conv_hidden[-1]))
         torch.nn.init.xavier_normal_(self.cluster_layer.data)
-
 
     def encode(self,
                 x,

@@ -133,7 +133,6 @@ def calculate_clustering_matrix(pred, gt, sample, methods_):
 
     return df
 
-
 def refine(
     sample_id,
     pred,

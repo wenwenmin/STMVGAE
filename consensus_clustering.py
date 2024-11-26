@@ -6,7 +6,6 @@ from typing import List
 from scipy.spatial import distance
 from scipy.cluster import hierarchy
 
-
 def labels_connectivity_mat(labels: np.ndarray):
     _labels = labels - np.min(labels)
     n_classes = np.unique(_labels)

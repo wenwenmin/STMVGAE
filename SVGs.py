@@ -85,7 +85,6 @@ meta_name, meta_exp=spg.find_meta_gene(input_adata=raw,
                     use_raw=False)
 
 raw.obs["meta"]=meta_exp
-
 raw.obs["exp"]=raw.obs["meta"]
 sc.pl.spatial(raw, img_key="hires",
               color="exp",

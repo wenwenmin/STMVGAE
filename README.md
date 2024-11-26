@@ -35,5 +35,7 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 
 ## Getting started
 We provide slices of the DLPFC dataset. We have encapsulated the STMVGAE training process into the run.ipynb file. You only need to enter the correct file path to run it.
-If you need programs to run other downstream tasks, please contact us via email: 83024551@qq.com.
 - See `run.ipynb`
+
+## Contact details
+If you have any questions, please contact：83024551@qq.com.

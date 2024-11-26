@@ -34,4 +34,4 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 -  The ISH images of the adult human brain in gene denosing task are available at the Allen Human Brain Atlas: https://human.brain-map.org/.
 
 ## Contact details
-If you have any questions, please contact：83024551@qq.com.
+If you have any questions, please contact：niujinyun@aliyun.com.

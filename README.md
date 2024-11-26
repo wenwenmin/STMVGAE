@@ -33,9 +33,5 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 -  Stereo-seq mouse olfactory bulb dataset: https://github.com/JinmiaoChenLab/SEDR_analyses;
 -  The ISH images of the adult human brain in gene denosing task are available at the Allen Human Brain Atlas: https://human.brain-map.org/.
 
-## Getting started
-We provide slices of the DLPFC dataset. We have encapsulated the STMVGAE training process into the run.ipynb file. You only need to enter the correct file path to run it.
-- See `run.ipynb`
-
 ## Contact details
 If you have any questions, please contact：83024551@qq.com.

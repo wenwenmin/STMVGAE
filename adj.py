@@ -334,5 +334,3 @@ def combine_graph_dict(dict_1, dict_2):
         "adj_label": torch.block_diag(dict_1['adj_label'], dict_2['adj_label']),
         "norm_value": np.mean([dict_1['norm_value'], dict_2['norm_value']])}
     return graph_dict
-
-

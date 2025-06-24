@@ -39,7 +39,7 @@ If you have any questions, please contact：niujinyun@aliyun.com.
 ## Citing
 <p>The corresponding BiBTeX citation are given below:</p>
 <div class="highlight-none"><div class="highlight"><pre>
-@article{niu2024deep,
+@article{niu2024STMVGAE,
   title={Deep clustering representation of spatially resolved transcriptomics data using multi-view variational graph auto-encoders with consensus clustering},
   author={Niu, Jinyun and Zhu, Fangfang and Xu, Taosheng and Wang, Shunfang and Min, Wenwen},
   journal={Computational and Structural Biotechnology Journal},

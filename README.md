@@ -35,3 +35,17 @@ All publicly available ST datasets, used in this study, can be downloaded from h
 
 ## Contact details
 If you have any questions, please contact：niujinyun@aliyun.com.
+
+## Citing
+<p>The corresponding BiBTeX citation are given below:</p>
+<div class="highlight-none"><div class="highlight"><pre>
+@article{niu2024deep,
+  title={Deep clustering representation of spatially resolved transcriptomics data using multi-view variational graph auto-encoders with consensus clustering},
+  author={Niu, Jinyun and Zhu, Fangfang and Xu, Taosheng and Wang, Shunfang and Min, Wenwen},
+  journal={Computational and Structural Biotechnology Journal},
+  volume={23},
+  pages={4369--4383},
+  year={2024},
+  publisher={Elsevier}
+}
+</pre></div>
